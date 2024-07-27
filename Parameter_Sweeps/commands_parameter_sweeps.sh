@@ -1,0 +1,104 @@
+
+#No stratification
+python parameter_sweep_general_new.py subclass NotAllSame DownCounts Sestan_DLPFC 0
+python parameter_sweep_general_new.py subclass_label NotAllSame DownCounts Allen_M1 0
+python parameter_sweep_general_new.py subclass NotAllSame DownCounts Allen_MTG 0
+python parameter_sweep_general_new.py subtype NotAllSame DownCounts Sestan_DLPFC 0
+python parameter_sweep_general_new.py cross_species_cluster_label NotAllSame DownCounts Allen_M1 0
+python parameter_sweep_general_new.py cross_species_cluster NotAllSame DownCounts Allen_MTG 0
+python parameter_sweep_general_new.py subclass AllSame DownCounts Sestan_DLPFC 0
+python parameter_sweep_general_new.py subclass_label AllSame DownCounts Allen_M1 0
+python parameter_sweep_general_new.py subclass AllSame DownCounts Allen_MTG 0
+python parameter_sweep_general_new.py subtype AllSame DownCounts Sestan_DLPFC 0
+python parameter_sweep_general_new.py cross_species_cluster_label AllSame DownCounts Allen_M1 0
+python parameter_sweep_general_new.py cross_species_cluster AllSame DownCounts Allen_MTG 0
+
+
+#Stratifying by expression level
+python parameter_sweep_general_new.py subtype NotAllSame DownCounts Sestan_DLPFC ExprLevel
+python parameter_sweep_general_new.py cross_species_cluster_label NotAllSame DownCounts Allen_M1 ExprLevel
+python parameter_sweep_general_new.py cross_species_cluster NotAllSame DownCounts Allen_MTG ExprLevel
+python parameter_sweep_general_new.py subclass NotAllSame DownCounts Sestan_DLPFC ExprLevel
+python parameter_sweep_general_new.py subclass_label NotAllSame DownCounts Allen_M1 ExprLevel
+python parameter_sweep_general_new.py subclass NotAllSame DownCounts Allen_MTG ExprLevel
+
+python parameter_sweep_general_new.py subtype AllSame DownCounts Sestan_DLPFC ExprLevel
+python parameter_sweep_general_new.py cross_species_cluster_label AllSame DownCounts Allen_M1 ExprLevel
+python parameter_sweep_general_new.py cross_species_cluster AllSame DownCounts Allen_MTG ExprLevel
+python parameter_sweep_general_new.py subclass AllSame DownCounts Sestan_DLPFC ExprLevel
+python parameter_sweep_general_new.py subclass_label AllSame DownCounts Allen_M1 ExprLevel
+python parameter_sweep_general_new.py subclass AllSame DownCounts Allen_MTG ExprLevel
+
+python parameter_sweep_general_new.py subtype NotAllSame DownCounts Sestan_DLPFC ExprLevel 1
+python parameter_sweep_general_new.py cross_species_cluster_label NotAllSame DownCounts Allen_M1 ExprLevel 1
+python parameter_sweep_general_new.py cross_species_cluster NotAllSame DownCounts Allen_MTG ExprLevel 1
+python parameter_sweep_general_new.py subclass NotAllSame DownCounts Sestan_DLPFC ExprLevel 1
+python parameter_sweep_general_new.py subclass_label NotAllSame DownCounts Allen_M1 ExprLevel 1
+python parameter_sweep_general_new.py subclass NotAllSame DownCounts Allen_MTG ExprLevel 1
+
+python parameter_sweep_general_new.py subtype AllSame DownCounts Sestan_DLPFC ExprLevel 1
+python parameter_sweep_general_new.py cross_species_cluster_label AllSame DownCounts Allen_M1 ExprLevel 1
+python parameter_sweep_general_new.py cross_species_cluster AllSame DownCounts Allen_MTG ExprLevel 1
+python parameter_sweep_general_new.py subclass AllSame DownCounts Sestan_DLPFC ExprLevel 1
+python parameter_sweep_general_new.py subclass_label AllSame DownCounts Allen_M1 ExprLevel 1
+python parameter_sweep_general_new.py subclass AllSame DownCounts Allen_MTG ExprLevel 1
+
+
+#Stratifying by constraint
+python parameter_sweep_general_new.py subtype NotAllSame DownCounts Sestan_DLPFC Pritchard 1
+python parameter_sweep_general_new.py cross_species_cluster_label NotAllSame DownCounts Allen_M1 Pritchard 1
+python parameter_sweep_general_new.py cross_species_cluster NotAllSame DownCounts Allen_MTG Pritchard 1
+python parameter_sweep_general_new.py subclass NotAllSame DownCounts Sestan_DLPFC Pritchard 1
+python parameter_sweep_general_new.py subclass_label NotAllSame DownCounts Allen_M1 Pritchard 1
+python parameter_sweep_general_new.py subclass NotAllSame DownCounts Allen_MTG Pritchard 1
+
+python parameter_sweep_general_new.py subtype AllSame DownCounts Sestan_DLPFC Pritchard 1
+python parameter_sweep_general_new.py cross_species_cluster_label AllSame DownCounts Allen_M1 Pritchard 1
+python parameter_sweep_general_new.py cross_species_cluster AllSame DownCounts Allen_MTG Pritchard 1
+python parameter_sweep_general_new.py subclass AllSame DownCounts Sestan_DLPFC Pritchard 1
+python parameter_sweep_general_new.py subclass_label AllSame DownCounts Allen_M1 Pritchard 1
+python parameter_sweep_general_new.py subclass AllSame DownCounts Allen_MTG Pritchard 1
+
+python parameter_sweep_general_new.py subtype NotAllSame DownCounts Sestan_DLPFC Pritchard 0
+python parameter_sweep_general_new.py cross_species_cluster_label NotAllSame DownCounts Allen_M1 Pritchard 0
+python parameter_sweep_general_new.py cross_species_cluster NotAllSame DownCounts Allen_MTG Pritchard 0
+python parameter_sweep_general_new.py subclass NotAllSame DownCounts Sestan_DLPFC Pritchard 0
+python parameter_sweep_general_new.py subclass_label NotAllSame DownCounts Allen_M1 Pritchard 0
+python parameter_sweep_general_new.py subclass NotAllSame DownCounts Allen_MTG Pritchard 0
+
+python parameter_sweep_general_new.py subtype AllSame DownCounts Sestan_DLPFC Pritchard 0
+python parameter_sweep_general_new.py cross_species_cluster_label AllSame DownCounts Allen_M1 Pritchard 0
+python parameter_sweep_general_new.py cross_species_cluster AllSame DownCounts Allen_MTG Pritchard 0
+python parameter_sweep_general_new.py subclass AllSame DownCounts Sestan_DLPFC Pritchard 0
+python parameter_sweep_general_new.py subclass_label AllSame DownCounts Allen_M1 Pritchard 0
+python parameter_sweep_general_new.py subclass AllSame DownCounts Allen_MTG Pritchard 0
+
+
+#Stratfiying by cell type-specificity of expression (Tau)
+python parameter_sweep_general_new.py subtype NotAllSame DownCounts Sestan_DLPFC Tau 1
+python parameter_sweep_general_new.py cross_species_cluster_label NotAllSame DownCounts Allen_M1 Tau 1
+python parameter_sweep_general_new.py cross_species_cluster NotAllSame DownCounts Allen_MTG Tau 1
+python parameter_sweep_general_new.py subclass NotAllSame DownCounts Sestan_DLPFC Tau 1
+python parameter_sweep_general_new.py subclass_label NotAllSame DownCounts Allen_M1 Tau 1
+python parameter_sweep_general_new.py subclass NotAllSame DownCounts Allen_MTG Tau 1
+
+python parameter_sweep_general_new.py subtype AllSame DownCounts Sestan_DLPFC Tau 1
+python parameter_sweep_general_new.py cross_species_cluster_label AllSame DownCounts Allen_M1 Tau 1
+python parameter_sweep_general_new.py cross_species_cluster AllSame DownCounts Allen_MTG Tau 1
+python parameter_sweep_general_new.py subclass AllSame DownCounts Sestan_DLPFC Tau 1
+python parameter_sweep_general_new.py subclass_label AllSame DownCounts Allen_M1 Tau 1
+python parameter_sweep_general_new.py subclass AllSame DownCounts Allen_MTG Tau 1
+
+python parameter_sweep_general_new.py subtype NotAllSame DownCounts Sestan_DLPFC Tau 0
+python parameter_sweep_general_new.py cross_species_cluster_label NotAllSame DownCounts Allen_M1 Tau 0
+python parameter_sweep_general_new.py cross_species_cluster NotAllSame DownCounts Allen_MTG Tau 0
+python parameter_sweep_general_new.py subclass NotAllSame DownCounts Sestan_DLPFC Tau 0
+python parameter_sweep_general_new.py subclass_label NotAllSame DownCounts Allen_M1 Tau 0
+python parameter_sweep_general_new.py subclass NotAllSame DownCounts Allen_MTG Tau 0
+
+python parameter_sweep_general_new.py subtype AllSame DownCounts Sestan_DLPFC Tau 0
+python parameter_sweep_general_new.py cross_species_cluster_label AllSame DownCounts Allen_M1 Tau 0
+python parameter_sweep_general_new.py cross_species_cluster AllSame DownCounts Allen_MTG Tau 0
+python parameter_sweep_general_new.py subclass AllSame DownCounts Sestan_DLPFC Tau 0
+python parameter_sweep_general_new.py subclass_label AllSame DownCounts Allen_M1 Tau 0
+python parameter_sweep_general_new.py subclass AllSame DownCounts Allen_MTG Tau 0
