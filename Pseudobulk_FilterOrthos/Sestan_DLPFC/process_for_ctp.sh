@@ -1,0 +1,28 @@
+#!/bin/bash
+#SBATCH --time=120:00:00
+#SBATCH --ntasks=1
+#SBATCH --cores 1
+#SBATCH --mem-per-cpu 128GB
+
+mkdir Sestan_DLPFC_Subsamples_subtype
+mkdir Sestan_DLPFC_Subsamples_subclass
+
+python process_for_ctp_Sestan_DLPFC.py rhesus subtype Sestan_DLPFC_Subsamples_subtype
+python process_for_ctp_Sestan_DLPFC.py chimp subtype Sestan_DLPFC_Subsamples_subtype
+python process_for_ctp_Sestan_DLPFC.py human subtype Sestan_DLPFC_Subsamples_subtype
+python process_for_ctp_Sestan_DLPFC.py marmoset subtype Sestan_DLPFC_Subsamples_subtype
+
+python process_for_ctp_Sestan_DLPFC.py rhesus subclass Sestan_DLPFC_Subsamples_subclass
+python process_for_ctp_Sestan_DLPFC.py chimp subclass Sestan_DLPFC_Subsamples_subclass
+python process_for_ctp_Sestan_DLPFC.py human subclass Sestan_DLPFC_Subsamples_subclass
+python process_for_ctp_Sestan_DLPFC.py marmoset subclass Sestan_DLPFC_Subsamples_subclass
+
+python convert_orthos_Sestan_DLPFC.py Sestan_DLPFC_Subsamples_subclass,Sestan_DLPFC_Subsamples_subtype
+
+ml load system rclone
+
+tar -cvzf Sestan_DLPFC_Subsamples_subtype.tar.gz Sestan_DLPFC_Subsamples_subtype
+rclone copy Sestan_DLPFC_Subsamples_subtype.tar.gz fraser:astarr/CellTypeProp_New_And_Pseudobulk/Sestan_DLPFC
+
+tar -cvzf Sestan_DLPFC_Subsamples_subclass.tar.gz Sestan_DLPFC_Subsamples_subclass
+rclone copy Sestan_DLPFC_Subsamples_subclass.tar.gz fraser:astarr/CellTypeProp_New_And_Pseudobulk/Sestan_DLPFC
